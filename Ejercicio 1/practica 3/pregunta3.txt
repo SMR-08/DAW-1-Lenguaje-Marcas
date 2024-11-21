@@ -1,0 +1,16 @@
+3. Si quisiéramos establecer excepciones al estilo general de fuente en un párrafo en particular ¿de qué 2 formas podríamos hacerlo?. 
+Emplea una de esas formas en el primer ejercicio en el párrafo que prefieras, y la otra en el segundo ejercicio, en un párrafo también a elegir.
+
+Existen dos maneras:
+1 - Usar la estilizacion "Inline".
+En "practica_inline.html" & "style_1.css" puede comprobarlo, se modifica el parrafo del "div" con "id" primero.
+Se cambia la fuente a "fantasy" desde el codigo HTML.
+/* No recomiendo esta practica. */
+
+2- Asignarle a la etiqueta de parrafo un "id".
+En "practica_div.html" & "style_2.css" puede comprobarlo, Si le asignamos una id unica al parrafo luego podemos asignarle un estilo unico de dos maneras:
+	- CSS externo, un fichero externo conteniendo el id y el estilo que debe llevar, como es el caso actual.
+	- CSS "style" interno, en el HTML escribir dentro de el HTML el style en un apartado de la etiqueta <head>.
+En nuestro caso le añadimos el "id" profe a un parrafo contenido en el "div" dos con "class" estrecho.
+Se cambia la fuente a "fantasy" desde el fichero css "style_2.css".
+/* No recomiendo esta practica, debemos abandonar CSS, que vuelva el texto plano. */

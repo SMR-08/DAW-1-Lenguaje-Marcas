@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+</head>
+<body>
+    <img id="imagen" src="https://static.planetminecraft.com/files/resource_media/screenshot/1339/AuschwitzBirkenau2_maingate3-scaled_6456609_lrg.jpg" alt="Imagen inicial" width="400" height="300">
+    <br>
+    <button onclick="cambiarTamano()">Cambiar tamaño</button>
+    <button onclick="cambiarImagen()">Cambiar imagen</button>
+
+    <script>
+        let imagenGrande = false;
+        let imagenCambiada = false;
+
+        function cambiarTamano() {
+            const imagen = document.getElementById('imagen');
+            if (imagenGrande) {
+                imagen.width = 400;
+                imagen.height = 300;
+            } else {
+                imagen.width = 600;
+                imagen.height = 450;
+            }
+            imagenGrande = !imagenGrande;
+        }
+
+        function cambiarImagen() {
+            const imagen = document.getElementById('imagen');
+            if (imagenCambiada) {
+                imagen.src = "https://static.planetminecraft.com/files/resource_media/screenshot/1339/AuschwitzBirkenau2_maingate3-scaled_6456609_lrg.jpg";
+            } else {
+                imagen.src = "https://www.contadoresyempresas.com.pe/wp-content/uploads/2021/07/logo-trabajo.jpg";
+            }
+            imagenCambiada = !imagenCambiada;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 3</title>
+</head>
+<body>
+    <div id="contenedor1">
+        <h2>Título del Primer Contenedor</h2>
+        <button id="boton1" onclick="alternarContenedores()">Mostrar Segundo Contenedor</button>
+    </div>
+
+    <div id="contenedor2" style="display: none;">
+        <h2>Título del Segundo Contenedor</h2>
+        <button id="boton2" onclick="alternarContenedores()">Mostrar Primer Contenedor</button>
+    </div>
+
+    <script>
+        function alternarContenedores() {
+            var contenedor1 = document.getElementById('contenedor1');
+            var contenedor2 = document.getElementById('contenedor2');
+
+            if (contenedor1.style.display !== 'none') {
+                contenedor1.style.display = 'none';
+                contenedor2.style.display = 'block';
+            } else {
+                contenedor1.style.display = 'block';
+                contenedor2.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
