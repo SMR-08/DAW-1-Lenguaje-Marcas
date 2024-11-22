@@ -1,0 +1,49 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+}
+* {
+	color: #000;
+    font-size: 16px;
+}
+a {
+	color:blue;
+}
+table {
+    border-collapse: collapse;
+    width: 25%;
+}
+caption {
+	color: #000;
+    font-size: 14px;
+}
+thead {
+	background-color: gray;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.encabezado {
+	font-weight: bold;
+	font-size:16px;
+	color:#666	 ;
+}
+#tabla_pie{
+	background-color: darkgray;
+}
+#titulo {
+	font-size: 20px;
+	margin: 0;
+	color:#333 ;
+}
+#cabezera, th {
+    text-align: center;
+	color: white;
+	font-size:16px;
+}
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Proyecto</title>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos del proyecto</legend>
+            <div class="form-group">
+                <label for="descripcion">Breve descripción del proyecto:</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Estado actual del proyecto:</label>
+                <div class="radio-group">
+                    <input type="radio" id="planteamiento" name="estado" value="planteamiento" checked>
+                    <label for="planteamiento" style="width: auto; margin-right: 15px;">En planteamiento</label>
+
+                    <input type="radio" id="planificacion" name="estado" value="planificacion">
+                    <label for="planificacion" style="width: auto; margin-right: 15px;">En planificación</label>
+
+                    <input type="radio" id="ejecucion" name="estado" value="ejecucion">
+                    <label for="ejecucion" style="width: auto; margin-right: 15px;">En ejecución</label>
+
+                    <input type="radio" id="finalizado" name="estado" value="finalizado">
+                    <label for="finalizado" style="width: auto;">Ya finalizado</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="presupuesto">Presupuesto aproximado (en €):</label>
+                <input type="text" id="presupuesto" name="presupuesto" required style="width: 100px;">
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
