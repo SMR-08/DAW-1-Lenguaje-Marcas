@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labs - Aprendiendo HTML y CSS</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <!-- Fuente personalizada de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+	    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100" style="position: absolute; z-index: -1;">
+        <rect width="100%" height="100%" fill="#3498db" />
+    </svg>
+	<h1>Labs</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="#mapa">Mapa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a Labs</h2>
+            <p>Aquí aprenderás a usar diversas etiquetas HTML, propiedades CSS y conceptos básicos de JavaScript.</p>
+        </section>
+
+        <section id="tabla">
+            <h2>Ejemplo de Tabla</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Encabezado 1</th>
+                        <th>Encabezado 2</th>
+                        <th>Encabezado 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dato 1</td>
+                        <td>Dato 2</td>
+                        <td>Dato 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dato 4</td>
+                        <td>Dato 5</td>
+                        <td>Dato 6</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="multimedia">
+            <h2>Contenido Multimedia</h2>
+            <h3>Video de YouTube</h3>
+            <iframe height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            
+            <h3>Imágenes</h3>
+            <img src="imagen1.jpg" alt="Imagen 1" class="imagen-ejemplo">
+            <img src="imagen2.png" alt="Imagen 2" class="imagen-ejemplo">
+            
+            <h3>Audio Embebido</h3>
+            <audio controls id = "audio">
+                <source src="audio-ejemplo.opus" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+
+        <section id="listas">
+            <h2>Ejemplos de Listas</h2>
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Creamos el tag ol	 </li>
+                <li>Creamos el tag li</li>
+                <li>Introducimos el contenido!</li>
+            </ol>
+            
+            <h3>Lista No Ordenada</h3>
+            <ul>
+                <li>Creamos el tag ul</li>
+                <li>Creamos el tag ul</li>
+                <li>Introducimos el contenido!</li>
+            </ul>
+        </section>
+
+        <section id="formulario">
+            <h2>Formulario de Ejemplo</h2>
+            <form id="formulario-ejemplo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" min="0" max="120">
+                
+                <fieldset>
+                    <legend>Género:</legend>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="femenino" name="genero" value="femenino">
+                    <label for="femenino">Femenino</label>
+                    <input type="radio" id="otro" name="genero" value="otro">
+                    <label for="otro">Otro</label>
+                </fieldset>
+                
+                <label for="terminos">Acepto los términos y condiciones (ninguno tranquilo):</label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+                
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section id="mapa">
+            <h2>Mapa de Google</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5474.458446955442!2d-4.557037722802661!3d36.740561471056765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f10963ce0f3d%3A0x310ae7d4bb2e8f7b!2sCPIFP%20Alan%20Turing!5e1!3m2!1ses!2ses!4v1733761308416!5m2!1ses!2ses" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+            <div class="iconos-rrss">
+            <a href="https://www.instagram.com/cpifpalanturing/"><img src="insta.png" alt="Instagram"></a>
+            <a href="https://twitter.com/cpifpalanturing/"><img src="twitter.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/cpifpalanturing/"><img src="face.png" alt="Facebook"></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
